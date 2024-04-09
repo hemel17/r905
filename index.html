@@ -15,56 +15,133 @@
   <body>
     <!-- header starts here -->
     <header class="max-w-[90%] mx-auto">
-        <!-- navbar -->
-        <nav>
-            <div class="navbar bg-base-100">
-                <div class="navbar-start">
-                  <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                    </div>
-                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                      <li><a>Home</a></li>
-                      <li><a>About</a></li>
-                      <li><a>Destination</a></li>
-                      <li><a>Search</a></li>
-                      
-                    </ul>
-                  </div>
-                  <a class="btn btn-ghost text-xl">P-Ticket</a>
-                </div>
-                <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1">
-                    <li><a>Home</a></li>
-                    <li><a>About</a></li>
-                    <li><a>Destination</a></li>
-                    <li><a>Search</a></li>
-                            
-                  </ul>
-                </div>
-                <div class="navbar-end">
-                  <a class="btn bg-green-100 hover:bg-green-200 border-2 border-green-600">
-                    <span class="font-bold text-lg text-green-400">Bus</span>
-                    <img src="./images/bus-icon.png" alt="bus icon">
-                  </a>
-                </div>
+      <!-- navbar -->
+      <nav class="mb-5">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
               </div>
-        </nav>
-
-        <!-- hero section -->
-        <div class="hero min-h-screen md:min-h-[550px] overflow-hidden rounded-3xl" style="background-image: url(./images/banner.png);">
-            <div class="hero-overlay bg-opacity-60"></div>
-            <div class="hero-content text-center text-white text-neutral-content">
-              <div class="max-w-md">
-                <h1 class="mb-5 text-5xl font-bold">End-to-End Travel with <br>
-                    <span class="text-green-500">P Paribahan</span></h1>
-                <p class="mb-5">Yes, you can run unit tests and view the results directly within the app. The 
-                    integrated testing features allow for a streamlined.</p>
-                <button class="btn btn-success">Buy Tickets</button>
-              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Destination</a></li>
+                <li><a>Search</a></li>
+              </ul>
             </div>
+            <a class="btn btn-ghost text-xl">P-Ticket</a>
           </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a
+              class="btn bg-green-100 hover:bg-green-200 border-2 border-green-600"
+            >
+              <span class="font-bold text-lg text-green-400">Bus</span>
+              <img src="./images/bus-icon.png" alt="bus icon" />
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- hero section -->
+      <div
+        class="hero min-h-screen md:min-h-[550px] overflow-hidden rounded-3xl mb-10 md:mb-20"
+        style="background-image: url(./images/banner.png)"
+      >
+        <div class="hero-overlay bg-opacity-60"></div>
+        <div class="hero-content text-center text-white text-neutral-content">
+          <div class="max-w-md">
+            <h1 class="mb-5 text-5xl font-bold">
+              End-to-End Travel with <br />
+              <span class="text-green-500">P Paribahan</span>
+            </h1>
+            <p class="mb-5">
+              Traveling by bus offers a multitude of benefits that cater to
+              various preferences and needs. From its cost-effective nature to
+              its accessibility and convenience, bus travel stands out as a
+              versatile mode of transportation.
+            </p>
+            <button class="btn btn-success">Buy Tickets</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- best offer section -->
+      <section>
+        <h2 class="font-bold text-5xl text-center mb-5 md:mb-10">
+          Best offers for you
+        </h2>
+        <!-- offers cards-->
+        <div
+          class="flex flex-col md:flex-row gap-5 justify-around items-center max-w-5xl mx-auto overflow-hidden"
+        >
+          <div
+            class="flex bg-amber-400 flex-1 text-black items-center justify-center rounded-xl"
+          >
+            <p class="flex flex-col p-5">
+              <span class="font-bold text-2xl">15% OFF</span>
+              <span class="font-semibold text-lg">on your next purchase</span>
+              <span class="text-gray-800">use by January 2024</span>
+            </p>
+            <img
+              class="h-full"
+              src="./images/cupon-devider.png"
+              alt="cupon-devider"
+            />
+            <p class="flex flex-col p-5">
+              <span class="font-bold text-2xl">NEW15</span>
+              <span>Coupon Code</span>
+            </p>
+          </div>
+          <div
+            class="flex bg-fuchsia-400 flex-1 text-black justify-center items-center rounded-xl"
+          >
+            <p class="flex flex-col p-5">
+              <span class="font-bold text-2xl">15% OFF</span>
+              <span class="font-semibold text-lg">on your next purchase</span>
+              <span class="text-gray-800">use by January 2024</span>
+            </p>
+            <img
+              class="h-full"
+              src="./images/cupon-devider.png"
+              alt="cupon-devider"
+            />
+            <p class="flex flex-col p-5">
+              <span class="font-bold text-2xl">NEW15</span>
+              <span>Coupon Code</span>
+            </p>
+          </div>
+        </div>
+        <button
+          class="btn btn-outline mt-5 md:mt-10 mb-10 md:mb-20 btn-success block mx-auto"
+        >
+          See All Offers
+        </button>
+      </section>
     </header>
-    
   </body>
 </html>
