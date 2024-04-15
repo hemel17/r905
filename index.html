@@ -137,7 +137,7 @@
           </div>
         </div>
         <button
-          class="btn btn-outline mt-5 md:mt-10 mb-10 md:mb-20 btn-success block mx-auto"
+          class="btn btn-outline mt-5 md:mt-10 mb-10 btn-success block mx-auto"
         >
           See All Offers
         </button>
@@ -148,8 +148,10 @@
     <main class="bg-gray-100">
       <!-- ticket section -->
       <section>
-        <h2 class="font-bold text-5xl text-center mt-10">P Paribahan</h2>
-        <p class="max-w-3xl mx-auto my-10">
+        <h2 class="font-bold text-5xl text-center pt-10 text-black">
+          P Paribahan
+        </h2>
+        <p class="max-w-3xl mx-auto my-10 text-gray-700">
           Traveling by bus offers a multitude of benefits that cater to various
           preferences and needs. From its cost-effective nature to its
           accessibility and convenience, bus travel stands out as a versatile
@@ -157,7 +159,7 @@
         </p>
         <!-- ticket -->
         <div
-          class="flex items-center justify-center flex-col md:flex-row bg-white rounded-xl w-[90%] md:max-w-5xl mx-auto"
+          class="flex items-center justify-center flex-col md:flex-row bg-white rounded-xl w-[90%] md:max-w-5xl mx-auto mb-10"
         >
           <!-- ticket info -->
           <div class="flex-1 mx-5">
@@ -204,7 +206,9 @@
                   <span>9:00 PM</span>
                 </p>
               </div>
-              <div class="flex justify-between text-black mt-4">
+              <div
+                class="flex flex-col md:flex-row gap-5 md:gap-0 justify-between text-black mt-4"
+              >
                 <p class="p-5 rounded-xl font-semibold bg-gray-400">
                   Boarding Point - Laxmipur
                 </p>
@@ -232,7 +236,73 @@
             <p class="text-lg text-gray-700">Per Seat</p>
           </div>
         </div>
+
+        <!-- seat -->
+        <div
+          class="bg-white text-gray-700 w-[90%] max-w-5xl mx-auto rounded-xl flex flex-col md:flex-row"
+        >
+          <!-- your seat -->
+          <div class="m-5 flex-1">
+            <h3
+              class="text-2xl font-bold border-b-2 py-4 border-gray-300 border-dashed"
+            >
+              Select Your Seat
+            </h3>
+            <div
+              class="flex justify-between py-4 border-b-2 border-gray-300 border-dashed"
+            >
+              <p class="flex items-center gap-4">
+                <img src="./images/seat-gray.png" alt="" /> Available
+              </p>
+              <p class="flex items-center gap-4">
+                <img src="./images/seat-green-filled.png" alt="" /> Selected
+              </p>
+            </div>
+            <!-- wheel -->
+            <div class="flex justify-end my-4">
+              <img src="./images/wheel.png" alt="" />
+            </div>
+            <!-- all seat -->
+            <div class="grid grid-cols-5 gap-4" id="seats"></div>
+          </div>
+
+          <!-- selected seat -->
+          <div class="m-5">
+            <h3
+              class="text-2xl font-bold border-b-2 py-4 border-gray-300 border-dashed"
+            >
+              Select Your Seat
+            </h3>
+            <div class="bg-gray-200 my-5 rounded-xl p-4">
+              <div class="flex justify-betweenf">
+                <!-- seat -->
+                <div>
+                  <h4 class="font-medium text-lg">Seat</h4>
+                </div>
+                <!-- class -->
+                <div>
+                  <h4 class="font-medium text-lg px-20">Class</h4>
+                </div>
+                <!-- price -->
+                <div>
+                  <h4 class="font-medium text-lg">Price</h4>
+                </div>
+              </div>
+              <!-- total -->
+              <div
+                class="border-y-2 border-gray-300 border-dashed py-4 my-4 font-medium text-lg flex justify-between"
+              >
+                <p>Total Price</p>
+                <p>BDT <span></span></p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
+
+    <!-- scripts -->
+    <script src="./scripts/app.js"></script>
+    <script src="./scripts/AllSeats.js"></script>
   </body>
 </html>
