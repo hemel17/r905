@@ -131,7 +131,7 @@ const handleSeat = (seat) => {
 
   // change seat color
   bookedSeats.map((seat) => {
-    document.getElementById(seat).classList.add("bg-green-400");
+    document.getElementById(seat).classList.add("bg-green-400", 'text-white');
   });
 
   // display seat details
@@ -190,12 +190,15 @@ applyBtn.addEventListener("click", () => {
     paragraph.textContent = "You got BDT 330 discount!";
     seatContainer.appendChild(paragraph);
   }
-  if (coupon === "Couple 20") {
+  else if (coupon === "Couple 20") {
     const currentTotal = parseInt(grandTotal.innerText);
     grandTotal.innerText = currentTotal * 0.8;
     couponDiv.classList.add("hidden");
     paragraph.textContent = "You got BDT 440 discount!";
     seatContainer.appendChild(paragraph);
+  }
+  else{
+    showAlert('Wrong Coupon!')
   }
 });
 
