@@ -217,6 +217,7 @@ nextBtn.addEventListener("click", () => {
   document.getElementById("email").value = "";
 
   // reset buttons
+  couponDiv.classList.remove('hidden');
   applyBtn.setAttribute("disabled", "disabled");
   nextBtn.setAttribute("disabled", "disabled");
 
