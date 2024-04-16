@@ -243,7 +243,7 @@ nextBtn.addEventListener("click", () => {
 
   // reset discount message
   const discountPara = document.getElementById("discount-para");
-  seatContainer.remove(discountPara);
+  seatContainer.removeChild(discountPara);
 
   // update total seat
   document.getElementById("total-seat").innerText = 40;
