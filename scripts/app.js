@@ -217,7 +217,7 @@ nextBtn.addEventListener("click", () => {
   document.getElementById("email").value = "";
 
   // reset buttons
-  couponDiv.classList.remove('hidden');
+  couponDiv.classList.remove("hidden");
   applyBtn.setAttribute("disabled", "disabled");
   nextBtn.setAttribute("disabled", "disabled");
 
@@ -244,7 +244,9 @@ nextBtn.addEventListener("click", () => {
 
   // reset discount message
   const discountPara = document.getElementById("discount-para");
-  seatContainer.removeChild(discountPara);
+  if (discountPara) {
+    seatContainer.removeChild(discountPara);
+  }
 
   // update total seat
   document.getElementById("total-seat").innerText = 40;
@@ -253,8 +255,6 @@ nextBtn.addEventListener("click", () => {
   // empty array
   bookedSeats = [];
 });
-
-console.log(totalSeat);
 
 const seatsHtml = allSeats
   .map((seat) => {
